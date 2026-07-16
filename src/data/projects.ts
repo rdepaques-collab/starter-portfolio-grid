@@ -70,6 +70,27 @@ import p7A6 from "@/assets/projet7-affiches/affiche-6.jpg.asset.json";
 import p7A7 from "@/assets/projet7-affiches/affiche-7.jpg.asset.json";
 import p7A8 from "@/assets/projet7-affiches/affiche-8.jpg.asset.json";
 import p7A9 from "@/assets/projet7-affiches/affiche-9.jpg.asset.json";
+import p7VCover from "@/assets/projet7-videos/cover-videos.jpg.asset.json";
+import p7V1 from "@/assets/projet7-videos/v1.jpg.asset.json";
+import p7V2 from "@/assets/projet7-videos/v2.jpg.asset.json";
+import p7V3 from "@/assets/projet7-videos/v3.jpg.asset.json";
+import p7V4 from "@/assets/projet7-videos/v4.jpg.asset.json";
+import p7V5 from "@/assets/projet7-videos/v5.jpg.asset.json";
+import p7V6 from "@/assets/projet7-videos/v6.jpg.asset.json";
+import p7V7 from "@/assets/projet7-videos/v7.jpg.asset.json";
+import p7V8 from "@/assets/projet7-videos/v8.jpg.asset.json";
+import p7V9 from "@/assets/projet7-videos/v9.jpg.asset.json";
+import p7V10 from "@/assets/projet7-videos/v10.jpg.asset.json";
+import p7V11 from "@/assets/projet7-videos/v11.jpg.asset.json";
+import p7V12 from "@/assets/projet7-videos/v12.jpg.asset.json";
+import p7V13 from "@/assets/projet7-videos/v13.jpg.asset.json";
+import p7V14 from "@/assets/projet7-videos/v14.jpg.asset.json";
+import p7V15 from "@/assets/projet7-videos/v15.jpg.asset.json";
+import p7V16 from "@/assets/projet7-videos/v16.jpg.asset.json";
+import p7V17 from "@/assets/projet7-videos/v17.jpg.asset.json";
+import p7V18 from "@/assets/projet7-videos/v18.jpg.asset.json";
+import p7V19 from "@/assets/projet7-videos/v19.jpg.asset.json";
+import p7V20 from "@/assets/projet7-videos/v20.jpg.asset.json";
 export interface GalleryItem {
   src: string;
   caption: string;
@@ -433,28 +454,29 @@ export const projects: Project[] = [
         slug: "videos",
         name: "🎥 Vidéos",
         description: "Toutes les vidéos réalisées avant ma formation professionnelle.",
+        cover: p7VCover.url,
         items: [],
         videos: [
-          { url: "https://drive.google.com/file/d/1-UxUR5m4voDoembJBmm1lBGFCIKD50ja/view?usp=sharing", title: "Vidéo 1", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/11zdQg0TQK1cxGFrOM8iuK-Z3i586Y6tc/view?usp=sharing", title: "Vidéo 2", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/13IUDXP2nEjNTJ9xTzq1_YFsvUdl7YaoC/view?usp=sharing", title: "Vidéo 3", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/19C2W9Q_NEwdhH0crU5UFDUiKXSQJBaND/view?usp=sharing", title: "Vidéo 4", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1GU3WttidB_XrhPbjM7hHOdcm4GE6A5Y_/view?usp=sharing", title: "Vidéo 5", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1J-_jlI4swzdV26stjXXVBJWr2TS_yGbG/view?usp=sharing", title: "Vidéo 6", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1KMEkx94JEWSPn8KCWB7wGSaiwdBrF2VX/view?usp=sharing", title: "Vidéo 7", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1QV3P8lo4aH8GbK_5WEZYoQPCs1Pq-wMq/view?usp=sharing", title: "Vidéo 8", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1Ti2BsH1voQMMXISBHyy-eZt_vSw4rAep/view?usp=sharing", title: "Vidéo 9", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1XUBLqw6n4WS77JBYsdPyCIKBPf5mCAEs/view?usp=sharing", title: "Vidéo 10", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1YgpiKdRfwBqDmyuHXDwm1GEdN4eESXDq/view?usp=sharing", title: "Vidéo 11", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1ZOFMDuY0dCuCvBcAEtX0FD3sbPXGYRB5/view?usp=sharing", title: "Vidéo 12", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1ZbaMV2G3M-BdQijsFhUhBzSpCsEIoTVZ/view?usp=sharing", title: "Vidéo 13", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1_d2acy1U6lzFvGAo5HRQca_sH1tCosRQ/view?usp=sharing", title: "Vidéo 14", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1g8TsPsAOSPx344bLUjbi6Xxv18-XYMa_/view?usp=sharing", title: "Vidéo 15", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1peRbp1QagJvGQtTxk_R7eAIbyu9Zw6ie/view?usp=sharing", title: "Vidéo 16", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1s62znnodkUBur3cTvsAJtLlsImADyRL-/view?usp=sharing", title: "Vidéo 17", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1stKnyEn1wlIaRqKPp4FqKtIroAiVJedf/view?usp=sharing", title: "Vidéo 18", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1uLiK5d5TBVkoz1p_zF-LwXZZ8NJ6gj6j/view?usp=sharing", title: "Vidéo 19", description: "Création vidéo réalisée avant ma formation professionnelle." },
-          { url: "https://drive.google.com/file/d/1zS-8WGW1DYVoqNluDxQR7UPOXFbxvNOK/view?usp=sharing", title: "Vidéo 20", description: "Création vidéo réalisée avant ma formation professionnelle." },
+          { url: "https://drive.google.com/file/d/1-UxUR5m4voDoembJBmm1lBGFCIKD50ja/view?usp=sharing", title: "Vidéo 1", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V1.url },
+          { url: "https://drive.google.com/file/d/11zdQg0TQK1cxGFrOM8iuK-Z3i586Y6tc/view?usp=sharing", title: "Vidéo 2", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V2.url },
+          { url: "https://drive.google.com/file/d/13IUDXP2nEjNTJ9xTzq1_YFsvUdl7YaoC/view?usp=sharing", title: "Vidéo 3", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V3.url },
+          { url: "https://drive.google.com/file/d/19C2W9Q_NEwdhH0crU5UFDUiKXSQJBaND/view?usp=sharing", title: "Vidéo 4", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V4.url },
+          { url: "https://drive.google.com/file/d/1GU3WttidB_XrhPbjM7hHOdcm4GE6A5Y_/view?usp=sharing", title: "Vidéo 5", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V5.url },
+          { url: "https://drive.google.com/file/d/1J-_jlI4swzdV26stjXXVBJWr2TS_yGbG/view?usp=sharing", title: "Vidéo 6", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V6.url },
+          { url: "https://drive.google.com/file/d/1KMEkx94JEWSPn8KCWB7wGSaiwdBrF2VX/view?usp=sharing", title: "Vidéo 7", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V7.url },
+          { url: "https://drive.google.com/file/d/1QV3P8lo4aH8GbK_5WEZYoQPCs1Pq-wMq/view?usp=sharing", title: "Vidéo 8", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V8.url },
+          { url: "https://drive.google.com/file/d/1Ti2BsH1voQMMXISBHyy-eZt_vSw4rAep/view?usp=sharing", title: "Vidéo 9", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V9.url },
+          { url: "https://drive.google.com/file/d/1XUBLqw6n4WS77JBYsdPyCIKBPf5mCAEs/view?usp=sharing", title: "Vidéo 10", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V10.url },
+          { url: "https://drive.google.com/file/d/1YgpiKdRfwBqDmyuHXDwm1GEdN4eESXDq/view?usp=sharing", title: "Vidéo 11", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V11.url },
+          { url: "https://drive.google.com/file/d/1ZOFMDuY0dCuCvBcAEtX0FD3sbPXGYRB5/view?usp=sharing", title: "Vidéo 12", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V12.url },
+          { url: "https://drive.google.com/file/d/1ZbaMV2G3M-BdQijsFhUhBzSpCsEIoTVZ/view?usp=sharing", title: "Vidéo 13", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V13.url },
+          { url: "https://drive.google.com/file/d/1_d2acy1U6lzFvGAo5HRQca_sH1tCosRQ/view?usp=sharing", title: "Vidéo 14", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V14.url },
+          { url: "https://drive.google.com/file/d/1g8TsPsAOSPx344bLUjbi6Xxv18-XYMa_/view?usp=sharing", title: "Vidéo 15", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V15.url },
+          { url: "https://drive.google.com/file/d/1peRbp1QagJvGQtTxk_R7eAIbyu9Zw6ie/view?usp=sharing", title: "Vidéo 16", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V16.url },
+          { url: "https://drive.google.com/file/d/1s62znnodkUBur3cTvsAJtLlsImADyRL-/view?usp=sharing", title: "Vidéo 17", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V17.url },
+          { url: "https://drive.google.com/file/d/1stKnyEn1wlIaRqKPp4FqKtIroAiVJedf/view?usp=sharing", title: "Vidéo 18", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V18.url },
+          { url: "https://drive.google.com/file/d/1uLiK5d5TBVkoz1p_zF-LwXZZ8NJ6gj6j/view?usp=sharing", title: "Vidéo 19", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V19.url },
+          { url: "https://drive.google.com/file/d/1zS-8WGW1DYVoqNluDxQR7UPOXFbxvNOK/view?usp=sharing", title: "Vidéo 20", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V20.url },
         ],
       },
     ],
@@ -470,26 +492,26 @@ export const projects: Project[] = [
       { src: p7A9.url, caption: "Affiche 9" },
     ],
     videos: [
-      { url: "https://drive.google.com/file/d/1-UxUR5m4voDoembJBmm1lBGFCIKD50ja/view?usp=sharing", title: "Vidéo 1", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/11zdQg0TQK1cxGFrOM8iuK-Z3i586Y6tc/view?usp=sharing", title: "Vidéo 2", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/13IUDXP2nEjNTJ9xTzq1_YFsvUdl7YaoC/view?usp=sharing", title: "Vidéo 3", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/19C2W9Q_NEwdhH0crU5UFDUiKXSQJBaND/view?usp=sharing", title: "Vidéo 4", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1GU3WttidB_XrhPbjM7hHOdcm4GE6A5Y_/view?usp=sharing", title: "Vidéo 5", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1J-_jlI4swzdV26stjXXVBJWr2TS_yGbG/view?usp=sharing", title: "Vidéo 6", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1KMEkx94JEWSPn8KCWB7wGSaiwdBrF2VX/view?usp=sharing", title: "Vidéo 7", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1QV3P8lo4aH8GbK_5WEZYoQPCs1Pq-wMq/view?usp=sharing", title: "Vidéo 8", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1Ti2BsH1voQMMXISBHyy-eZt_vSw4rAep/view?usp=sharing", title: "Vidéo 9", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1XUBLqw6n4WS77JBYsdPyCIKBPf5mCAEs/view?usp=sharing", title: "Vidéo 10", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1YgpiKdRfwBqDmyuHXDwm1GEdN4eESXDq/view?usp=sharing", title: "Vidéo 11", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1ZOFMDuY0dCuCvBcAEtX0FD3sbPXGYRB5/view?usp=sharing", title: "Vidéo 12", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1ZbaMV2G3M-BdQijsFhUhBzSpCsEIoTVZ/view?usp=sharing", title: "Vidéo 13", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1_d2acy1U6lzFvGAo5HRQca_sH1tCosRQ/view?usp=sharing", title: "Vidéo 14", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1g8TsPsAOSPx344bLUjbi6Xxv18-XYMa_/view?usp=sharing", title: "Vidéo 15", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1peRbp1QagJvGQtTxk_R7eAIbyu9Zw6ie/view?usp=sharing", title: "Vidéo 16", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1s62znnodkUBur3cTvsAJtLlsImADyRL-/view?usp=sharing", title: "Vidéo 17", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1stKnyEn1wlIaRqKPp4FqKtIroAiVJedf/view?usp=sharing", title: "Vidéo 18", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1uLiK5d5TBVkoz1p_zF-LwXZZ8NJ6gj6j/view?usp=sharing", title: "Vidéo 19", description: "Création vidéo réalisée avant ma formation professionnelle." },
-      { url: "https://drive.google.com/file/d/1zS-8WGW1DYVoqNluDxQR7UPOXFbxvNOK/view?usp=sharing", title: "Vidéo 20", description: "Création vidéo réalisée avant ma formation professionnelle." },
+      { url: "https://drive.google.com/file/d/1-UxUR5m4voDoembJBmm1lBGFCIKD50ja/view?usp=sharing", title: "Vidéo 1", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V1.url },
+      { url: "https://drive.google.com/file/d/11zdQg0TQK1cxGFrOM8iuK-Z3i586Y6tc/view?usp=sharing", title: "Vidéo 2", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V2.url },
+      { url: "https://drive.google.com/file/d/13IUDXP2nEjNTJ9xTzq1_YFsvUdl7YaoC/view?usp=sharing", title: "Vidéo 3", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V3.url },
+      { url: "https://drive.google.com/file/d/19C2W9Q_NEwdhH0crU5UFDUiKXSQJBaND/view?usp=sharing", title: "Vidéo 4", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V4.url },
+      { url: "https://drive.google.com/file/d/1GU3WttidB_XrhPbjM7hHOdcm4GE6A5Y_/view?usp=sharing", title: "Vidéo 5", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V5.url },
+      { url: "https://drive.google.com/file/d/1J-_jlI4swzdV26stjXXVBJWr2TS_yGbG/view?usp=sharing", title: "Vidéo 6", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V6.url },
+      { url: "https://drive.google.com/file/d/1KMEkx94JEWSPn8KCWB7wGSaiwdBrF2VX/view?usp=sharing", title: "Vidéo 7", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V7.url },
+      { url: "https://drive.google.com/file/d/1QV3P8lo4aH8GbK_5WEZYoQPCs1Pq-wMq/view?usp=sharing", title: "Vidéo 8", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V8.url },
+      { url: "https://drive.google.com/file/d/1Ti2BsH1voQMMXISBHyy-eZt_vSw4rAep/view?usp=sharing", title: "Vidéo 9", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V9.url },
+      { url: "https://drive.google.com/file/d/1XUBLqw6n4WS77JBYsdPyCIKBPf5mCAEs/view?usp=sharing", title: "Vidéo 10", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V10.url },
+      { url: "https://drive.google.com/file/d/1YgpiKdRfwBqDmyuHXDwm1GEdN4eESXDq/view?usp=sharing", title: "Vidéo 11", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V11.url },
+      { url: "https://drive.google.com/file/d/1ZOFMDuY0dCuCvBcAEtX0FD3sbPXGYRB5/view?usp=sharing", title: "Vidéo 12", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V12.url },
+      { url: "https://drive.google.com/file/d/1ZbaMV2G3M-BdQijsFhUhBzSpCsEIoTVZ/view?usp=sharing", title: "Vidéo 13", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V13.url },
+      { url: "https://drive.google.com/file/d/1_d2acy1U6lzFvGAo5HRQca_sH1tCosRQ/view?usp=sharing", title: "Vidéo 14", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V14.url },
+      { url: "https://drive.google.com/file/d/1g8TsPsAOSPx344bLUjbi6Xxv18-XYMa_/view?usp=sharing", title: "Vidéo 15", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V15.url },
+      { url: "https://drive.google.com/file/d/1peRbp1QagJvGQtTxk_R7eAIbyu9Zw6ie/view?usp=sharing", title: "Vidéo 16", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V16.url },
+      { url: "https://drive.google.com/file/d/1s62znnodkUBur3cTvsAJtLlsImADyRL-/view?usp=sharing", title: "Vidéo 17", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V17.url },
+      { url: "https://drive.google.com/file/d/1stKnyEn1wlIaRqKPp4FqKtIroAiVJedf/view?usp=sharing", title: "Vidéo 18", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V18.url },
+      { url: "https://drive.google.com/file/d/1uLiK5d5TBVkoz1p_zF-LwXZZ8NJ6gj6j/view?usp=sharing", title: "Vidéo 19", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V19.url },
+      { url: "https://drive.google.com/file/d/1zS-8WGW1DYVoqNluDxQR7UPOXFbxvNOK/view?usp=sharing", title: "Vidéo 20", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V20.url },
     ],
   },
   ...Array.from({ length: 23 }, (_, i) => ({

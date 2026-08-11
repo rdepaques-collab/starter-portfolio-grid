@@ -137,7 +137,7 @@ export const projects: Project[] = [
     cover: nafaCover.url,
     description:
       "Conception d'un visuel publicitaire pour l'application NAFA afin de promouvoir les transferts d'argent en ligne. L'objectif était de mettre en avant la simplicité, la rapidité et la sécurité des transferts tout en renforçant la notoriété de la marque grâce à une composition moderne et percutante.",
-    software: ["Adobe Photoshop"],
+    software: ["Canva", "CapCut", "Photoshop"],
     goals: [
       "Mettre en avant la simplicité des transferts d'argent en ligne",
       "Valoriser la rapidité et la sécurité du service",
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     cover: pasnelCover.url,
     description:
       "Création d'une campagne publicitaire mettant en valeur les appartements meublés et les services de la résidence. Le projet comprend la conception graphique du visuel promotionnel ainsi qu'une vidéo publicitaire.",
-    software: ["Adobe Photoshop", "Adobe Premiere Pro"],
+    software: ["Canva", "CapCut", "Photoshop"],
     video: "https://drive.google.com/file/d/1XUBLqw6n4WS77JBYsdPyCIKBPf5mCAEs/view?usp=sharing",
   },
   {
@@ -164,7 +164,7 @@ export const projects: Project[] = [
     cover: nafaA1.url,
     description:
       "Regroupement de l'ensemble des affiches publicitaires réalisées pour NAFA, l'application de paiement et de transfert d'argent. Cette campagne décline un univers visuel cohérent et moderne autour de la simplicité, de la rapidité et de la sécurité des services NAFA, à travers une série de visuels percutants pensés pour les réseaux sociaux.",
-    software: ["Adobe Photoshop", "Adobe Illustrator", "Adobe After Effects"],
+    software: ["Canva", "CapCut", "Photoshop"],
     gallery: [
       { src: nafaA1.url, caption: "Transferts multi-pays : payer plusieurs proches en même temps." },
       { src: nafaA2.url, caption: "« Où va ton argent quand tu fais un transfert ? » — la transparence NAFA." },
@@ -287,7 +287,7 @@ export const projects: Project[] = [
     cover: dmaCover.url,
     description:
       "Ensemble de campagnes publicitaires réalisées pour Digital Marketing Academy, mêlant conception graphique et montage vidéo pour promouvoir la formation à la création de vidéos publicitaires captivantes.",
-    software: ["Adobe Photoshop", "Adobe Premiere Pro"],
+    software: ["Canva", "CapCut", "Photoshop"],
     videos: [
       {
         url: "https://drive.google.com/file/d/1QV3P8lo4aH8GbK_5WEZYoQPCs1Pq-wMq/view?usp=sharing",
@@ -348,7 +348,7 @@ export const projects: Project[] = [
     cover: affA4.url,
     description:
       "Conception d'identités visuelles et de supports de communication print & digital pour Digital Marketing Academy et plusieurs marques partenaires. Ce projet regroupe les logos et les affiches publicitaires réalisés, présentés en deux galeries dédiées.",
-    software: ["Adobe Photoshop", "Adobe Illustrator"],
+    software: ["Canva", "CapCut", "Photoshop"],
     logos: [
       { src: logoRama.url, caption: "Logo – RAMA Cosmétique" },
       { src: logoPasnel.url, caption: "Logo – Résidence PASNEL CONFORT" },
@@ -372,7 +372,7 @@ export const projects: Project[] = [
     cover: nafaCover.url,
     description:
       "Ensemble de vidéos publicitaires réalisées pour promouvoir l'application NAFA Me : paiements, transferts d'argent et services financiers du quotidien. Chaque vidéo met en avant la simplicité, la rapidité et la sécurité de l'application à travers un univers visuel moderne et rythmé.",
-    software: ["Adobe Premiere Pro", "Adobe After Effects", "Adobe Photoshop"],
+    software: ["Canva", "CapCut", "Photoshop"],
     videos: [
       {
         url: "https://drive.google.com/file/d/10xxjwk8wknBrTHrcmdnMx_hYtEUy3cjt/view?usp=sharing",

@@ -44,6 +44,8 @@ import vThumb4 from "@/assets/dma-videos/video-4.jpg.asset.json";
 import vThumb5 from "@/assets/dma-videos/video-5.jpg.asset.json";
 import vThumb6 from "@/assets/dma-videos/video-6.jpg.asset.json";
 import vThumb7 from "@/assets/dma-videos/video-7.jpg.asset.json";
+import vThumb8 from "@/assets/dma-videos/video-8.jpg.asset.json";
+import vThumb9 from "@/assets/dma-videos/video-9.jpg.asset.json";
 import logoRama from "@/assets/projet5-logos/rama.png.asset.json";
 import logoPasnel from "@/assets/projet5-logos/pasnel.jpg.asset.json";
 import logoMaster from "@/assets/projet5-logos/master-electro.jpg.asset.json";

@@ -3,6 +3,8 @@ import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
 import { ArrowLeft, Check, Maximize2, Play } from "lucide-react";
 import { getProject } from "@/data/projects";
 import { Lightbox } from "@/components/Lightbox";
+import { VideoModal } from "@/components/VideoModal";
+import type { VideoItem } from "@/data/projects";
 
 function toDrivePreviewUrl(url: string) {
   return url.replace(/\/view(\?.*)?$/, "/preview");
@@ -67,6 +69,7 @@ function ProjectDetail() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<"logos" | "affiches">("logos");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [activeVideo, setActiveVideo] = useState<VideoItem | null>(null);
 
   if (!project || !project.cover) return <NotFound />;
 
@@ -82,6 +85,7 @@ function ProjectDetail() {
       : project.videos ?? [];
   const hasTabs = logos.length > 0 && gallery.length > 0;
   const lightboxItems = hasTabs ? (activeTab === "logos" ? logos : gallery) : gallery;
+  const useModal = project.id === 8;
 
 
   return (
@@ -376,6 +380,29 @@ function ProjectDetail() {
                   key={video.url}
                   className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
+                  {useModal ? (
+                  <button
+                    type="button"
+                    onClick={() => setActiveVideo(video)}
+                    aria-label={`Voir la vidéo : ${video.title}`}
+                    className="relative block aspect-video w-full overflow-hidden bg-secondary"
+                  >
+                    {video.thumbnail ? (
+                      <img
+                        src={video.thumbnail}
+                        alt={`Miniature – ${video.title}`}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center bg-secondary" />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
+                    <span className="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg backdrop-blur transition-transform duration-300 group-hover:scale-110">
+                      <Play className="ml-0.5 h-6 w-6" aria-hidden />
+                    </span>
+                  </button>
+                  ) : (
                   <a
                     href={video.url}
                     target="_blank"
@@ -398,9 +425,20 @@ function ProjectDetail() {
                       <Play className="ml-0.5 h-6 w-6" aria-hidden />
                     </span>
                   </a>
+                  )}
                   <div className="flex flex-1 flex-col p-5">
                     <h3 className="text-base font-semibold text-foreground">{video.title}</h3>
                     <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{video.description}</p>
+                    {useModal ? (
+                    <button
+                      type="button"
+                      onClick={() => setActiveVideo(video)}
+                      className="mt-4 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                    >
+                      <Play className="h-4 w-4" aria-hidden />
+                      Voir la vidéo
+                    </button>
+                    ) : (
                     <a
                       href={video.url}
                       target="_blank"
@@ -410,6 +448,7 @@ function ProjectDetail() {
                       <Play className="h-4 w-4" aria-hidden />
                       Regarder la vidéo
                     </a>
+                    )}
                   </div>
                 </article>
               ))}
@@ -436,6 +475,8 @@ function ProjectDetail() {
           onNavigate={setLightboxIndex}
         />
       )}
+
+      {activeVideo && <VideoModal video={activeVideo} onClose={() => setActiveVideo(null)} />}
     </main>
   );
 }

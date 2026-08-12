@@ -426,6 +426,27 @@ export const projects: Project[] = [
           "Achats de crédit téléphonique, abonnements et paiement de factures : une démonstration éclair de la polyvalence de NAFA Me.",
         thumbnail: nafaMeThumb7,
       },
+      {
+        url: "https://drive.google.com/file/d/1EUrXdatO5XUqFX1qnGdTiLMRE96N6HKV/view?usp=sharing",
+        title: "NAFA Me – Une application, tous vos services",
+        description:
+          "Nouvelle vidéo publicitaire mettant en avant l'ensemble des services NAFA Me réunis dans une seule application simple et rapide.",
+        thumbnail: nafaMeThumb8.url,
+      },
+      {
+        url: "https://drive.google.com/file/d/1IzrGQa-tezbhZp-I8W4bkjc99m-l_uhz/view?usp=sharing",
+        title: "Gérer son argent en toute confiance",
+        description:
+          "Spot centré sur la sécurité et la fiabilité des opérations financières réalisées avec NAFA Me au quotidien.",
+        thumbnail: nafaMeThumb9.url,
+      },
+      {
+        url: "https://drive.google.com/file/d/1uSnLstgB_qKbJCTFjkkQmxivMek-d2Wq/view?usp=sharing",
+        title: "Paiements mobiles simples et instantanés",
+        description:
+          "Démonstration rythmée des paiements mobiles NAFA Me : quelques gestes suffisent pour payer et transférer.",
+        thumbnail: nafaMeThumb10.url,
+      },
     ],
   },
   {

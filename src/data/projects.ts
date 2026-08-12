@@ -96,6 +96,9 @@ import p7V17 from "@/assets/projet7-videos/v17.jpg.asset.json";
 import p7V18 from "@/assets/projet7-videos/v18.jpg.asset.json";
 import p7V19 from "@/assets/projet7-videos/v19.jpg.asset.json";
 import p7V20 from "@/assets/projet7-videos/v20.jpg.asset.json";
+import cfpLogo from "@/assets/cfp/logo.jpg.asset.json";
+import cfpA1 from "@/assets/cfp/affiche-1.jpg.asset.json";
+import cfpA2 from "@/assets/cfp/affiche-2.png.asset.json";
 export interface GalleryItem {
   src: string;
   caption: string;
@@ -554,11 +557,75 @@ export const projects: Project[] = [
       { url: "https://drive.google.com/file/d/1zS-8WGW1DYVoqNluDxQR7UPOXFbxvNOK/view?usp=sharing", title: "Vidéo 20", description: "Création vidéo réalisée avant ma formation professionnelle.", thumbnail: p7V20.url },
     ],
   },
-  ...Array.from({ length: 23 }, (_, i) => ({
-    id: i + 8,
+  {
+    id: 8,
+    title: "CFP Comme Chez Soi – Saradji-Comé",
+    category: "Graphisme & Vidéo",
+    client: "CFP Comme Chez Soi – Comé, Mono (Bénin)",
+    cover: cfpLogo.url,
+    description:
+      "Création de contenus visuels et vidéos pour le CFP Comme Chez Soi – Saradji-Comé, un centre de formation professionnelle en cuisine et restauration situé à Comé, dans le Mono au Bénin. Le projet regroupe les affiches de communication et les vidéos de présentation réalisées pour valoriser la formation pratique, l'encadrement qualifié et les métiers de la cuisine.",
+    software: ["Canva", "CapCut", "Photoshop"],
+    goals: [
+      "Valoriser l'identité visuelle du centre de formation",
+      "Mettre en avant la formation pratique en cuisine et restauration",
+      "Attirer de nouveaux apprenants grâce à des visuels modernes",
+      "Présenter le centre en vidéo de manière professionnelle",
+    ],
+    categories: [
+      {
+        slug: "affiche",
+        name: "🖼️ Affiche",
+        description: "Les affiches de communication réalisées pour le CFP Comme Chez Soi.",
+        cover: cfpA1.url,
+        items: [
+          {
+            src: cfpA1.url,
+            caption:
+              "Bienvenue au CFP Comme Chez Soi — Affiche de présentation du CFP Comme Chez Soi mettant en avant la formation pratique en cuisine et restauration.",
+          },
+          {
+            src: cfpA2.url,
+            caption:
+              "Formation professionnelle en cuisine — Création visuelle présentant l'environnement de formation, les apprenants et l'apprentissage pratique de la cuisine.",
+          },
+          {
+            src: cfpLogo.url,
+            caption:
+              "CFP Comme Chez Soi – Saradji-Comé — Identité visuelle et présentation du centre de formation professionnelle en cuisine et restauration.",
+          },
+        ],
+      },
+      {
+        slug: "video",
+        name: "🎥 Vidéo",
+        description: "Les vidéos réalisées pour le CFP Comme Chez Soi.",
+        cover: "https://drive.google.com/thumbnail?id=1TzjBxVVARYrYwH3Je8L2cD3j5Uz19A3D&sz=w1280",
+        items: [],
+        videos: [
+          {
+            url: "https://drive.google.com/file/d/1TzjBxVVARYrYwH3Je8L2cD3j5Uz19A3D/view?usp=sharing",
+            title: "Présentation du CFP Comme Chez Soi",
+            description:
+              "Vidéo promotionnelle présentant le CFP Comme Chez Soi, son environnement de formation et les opportunités offertes aux apprenants.",
+            thumbnail: "https://drive.google.com/thumbnail?id=1TzjBxVVARYrYwH3Je8L2cD3j5Uz19A3D&sz=w1280",
+          },
+          {
+            url: "https://drive.google.com/file/d/1dThHd_Yi287EdX-fXe-RAmuvslEzCyMI/view?usp=sharing",
+            title: "Formation cuisine et restauration",
+            description:
+              "Vidéo mettant en valeur la formation pratique, les apprenants et l'apprentissage des métiers de la cuisine et de la restauration.",
+            thumbnail: "https://drive.google.com/thumbnail?id=1dThHd_Yi287EdX-fXe-RAmuvslEzCyMI&sz=w1280",
+          },
+        ],
+      },
+    ],
+  },
+  ...Array.from({ length: 22 }, (_, i) => ({
+    id: i + 9,
     title: "Titre du projet",
     category: "Catégorie",
-    description: `Description de l'emplacement ${i + 8}. Remplacez ce contenu par votre projet.`,
+    description: `Description de l'emplacement ${i + 9}. Remplacez ce contenu par votre projet.`,
   })),
 ];
 

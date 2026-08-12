@@ -44,6 +44,8 @@ import vThumb4 from "@/assets/dma-videos/video-4.jpg.asset.json";
 import vThumb5 from "@/assets/dma-videos/video-5.jpg.asset.json";
 import vThumb6 from "@/assets/dma-videos/video-6.jpg.asset.json";
 import vThumb7 from "@/assets/dma-videos/video-7.jpg.asset.json";
+import vThumb8 from "@/assets/dma-videos/video-8.jpg.asset.json";
+import vThumb9 from "@/assets/dma-videos/video-9.jpg.asset.json";
 import logoRama from "@/assets/projet5-logos/rama.png.asset.json";
 import logoPasnel from "@/assets/projet5-logos/pasnel.jpg.asset.json";
 import logoMaster from "@/assets/projet5-logos/master-electro.jpg.asset.json";
@@ -340,6 +342,20 @@ export const projects: Project[] = [
         description:
           "Vidéo d'accroche pleine d'humour et de spontanéité : la découverte du marketing digital sur mobile, pour inciter les curieux à franchir le pas et rejoindre la formation.",
         thumbnail: vThumb7.url,
+      },
+      {
+        url: "https://drive.google.com/file/d/160_PHO05ab9XBKpBNqOflaAy5MeOLdL3/view?usp=sharing",
+        title: "Campagne digitale – Digital Marketing Academy",
+        description:
+          "Vidéo publicitaire moderne mettant en avant l'univers de la Digital Marketing Academy : esthétique soignée, dynamisme visuel et message clair pour renforcer la notoriété de la formation.",
+        thumbnail: vThumb8.url,
+      },
+      {
+        url: "https://drive.google.com/file/d/1Hob1Yci9pPpqCMY3HDS5y07EqEyZDnvy/view?usp=sharing",
+        title: "Promotion formation – Digital Marketing Academy",
+        description:
+          "Vidéo promotionnelle percutante qui présente les atouts de la formation en marketing digital : rythme entraînant, identité visuelle forte et appel à l'action pour rejoindre la prochaine session.",
+        thumbnail: vThumb9.url,
       },
     ],
   },

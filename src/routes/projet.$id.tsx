@@ -10,6 +10,28 @@ function toDrivePreviewUrl(url: string) {
   return url.replace(/\/view(\?.*)?$/, "/preview");
 }
 
+function toDriveThumbnail(url: string) {
+  const match = url.match(/\/file\/d\/([^/]+)/);
+  return match ? `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1280` : null;
+}
+
+function VideoThumb({ video }: { video: VideoItem }) {
+  const driveThumb = toDriveThumbnail(video.url);
+  const [src, setSrc] = useState<string | null>(driveThumb ?? video.thumbnail ?? null);
+
+  if (!src) return <div className="flex h-full w-full items-center justify-center bg-secondary" />;
+
+  return (
+    <img
+      src={src}
+      alt={`Miniature – ${video.title}`}
+      loading="lazy"
+      onError={() => setSrc(src !== video.thumbnail && video.thumbnail ? video.thumbnail : null)}
+      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+  );
+}
+
 export const Route = createFileRoute("/projet/$id")({
   head: ({ params }) => {
     const project = getProject(Number(params.id));
@@ -387,16 +409,7 @@ function ProjectDetail() {
                     aria-label={`Voir la vidéo : ${video.title}`}
                     className="relative block aspect-video w-full overflow-hidden bg-secondary"
                   >
-                    {video.thumbnail ? (
-                      <img
-                        src={video.thumbnail}
-                        alt={`Miniature – ${video.title}`}
-                        loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-secondary" />
-                    )}
+                    <VideoThumb video={video} />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
                     <span className="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg backdrop-blur transition-transform duration-300 group-hover:scale-110">
                       <Play className="ml-0.5 h-6 w-6" aria-hidden />
@@ -410,16 +423,7 @@ function ProjectDetail() {
                     aria-label={`Voir la vidéo : ${video.title}`}
                     className="relative block aspect-video overflow-hidden bg-secondary"
                   >
-                    {video.thumbnail ? (
-                      <img
-                        src={video.thumbnail}
-                        alt={`Miniature – ${video.title}`}
-                        loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-secondary" />
-                    )}
+                    <VideoThumb video={video} />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
                     <span className="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg backdrop-blur transition-transform duration-300 group-hover:scale-110">
                       <Play className="ml-0.5 h-6 w-6" aria-hidden />

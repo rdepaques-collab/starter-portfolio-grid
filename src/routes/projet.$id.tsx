@@ -409,16 +409,7 @@ function ProjectDetail() {
                     aria-label={`Voir la vidéo : ${video.title}`}
                     className="relative block aspect-video w-full overflow-hidden bg-secondary"
                   >
-                    {video.thumbnail ? (
-                      <img
-                        src={video.thumbnail}
-                        alt={`Miniature – ${video.title}`}
-                        loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-secondary" />
-                    )}
+                    <VideoThumb video={video} />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
                     <span className="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg backdrop-blur transition-transform duration-300 group-hover:scale-110">
                       <Play className="ml-0.5 h-6 w-6" aria-hidden />
@@ -432,16 +423,7 @@ function ProjectDetail() {
                     aria-label={`Voir la vidéo : ${video.title}`}
                     className="relative block aspect-video overflow-hidden bg-secondary"
                   >
-                    {video.thumbnail ? (
-                      <img
-                        src={video.thumbnail}
-                        alt={`Miniature – ${video.title}`}
-                        loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-secondary" />
-                    )}
+                    <VideoThumb video={video} />
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/50 via-transparent to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
                     <span className="absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg backdrop-blur transition-transform duration-300 group-hover:scale-110">
                       <Play className="ml-0.5 h-6 w-6" aria-hidden />

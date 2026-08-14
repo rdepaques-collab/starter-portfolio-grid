@@ -10,6 +10,28 @@ function toDrivePreviewUrl(url: string) {
   return url.replace(/\/view(\?.*)?$/, "/preview");
 }
 
+function toDriveThumbnail(url: string) {
+  const match = url.match(/\/file\/d\/([^/]+)/);
+  return match ? `https://drive.google.com/thumbnail?id=${match[1]}&sz=w1280` : null;
+}
+
+function VideoThumb({ video }: { video: VideoItem }) {
+  const driveThumb = toDriveThumbnail(video.url);
+  const [src, setSrc] = useState<string | null>(driveThumb ?? video.thumbnail ?? null);
+
+  if (!src) return <div className="flex h-full w-full items-center justify-center bg-secondary" />;
+
+  return (
+    <img
+      src={src}
+      alt={`Miniature – ${video.title}`}
+      loading="lazy"
+      onError={() => setSrc(src !== video.thumbnail && video.thumbnail ? video.thumbnail : null)}
+      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+  );
+}
+
 export const Route = createFileRoute("/projet/$id")({
   head: ({ params }) => {
     const project = getProject(Number(params.id));
